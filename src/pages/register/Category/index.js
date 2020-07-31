@@ -3,33 +3,22 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm'
+
 function RegisterCategory() {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '#000',
   };
+  
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
 
-  function setValue(chave, valor) {
-    // chave: nome, descricao
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(infoEvent) {
-    setValue(
-      infoEvent.target.getAttribute('name'),
-      infoEvent.target.value,
-    );
-  }
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
 
   useEffect(() => {
-    const URL_TOP = 'http://localhost:8080/categorias';
-    fetch(URL_TOP)
+    const URL_BACKEND = window.location.hostname.includes('localhost') ? 'https://localhost:8080/categorias' : 'https://camaleflix.herokuapp.com/categorias';
+    fetch(URL_BACKEND)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
         setCategorias([
@@ -43,22 +32,22 @@ function RegisterCategory() {
       <h1>
         {' '}
         Cadastro de Categoria:
-        {values.nome}
+        {values.titulo}
       </h1>
       <form onSubmit={function handleSubmit(infoDoEvento) {
         infoDoEvento.preventDefault();
-        
 
-        setValues(valoresIniciais);
+
+        clearForm();
       }}
       >
 
         <FormField
           label="Nome"
-          value={values.nome}
+          value={values.titulo}
           onChange={handleChange}
           type="text"
-          name="nome"
+          name="titulo"
         />
 
         <FormField
@@ -89,9 +78,9 @@ function RegisterCategory() {
       )}
 
       <ul>
-        {categorias.map((categoria, indice) => (
-          <li key={`${categoria}${indice}`}>
-            {categoria.nome}
+        {categorias.map((categoria) => (
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>

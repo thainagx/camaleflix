@@ -2,9 +2,119 @@
     "categorias": [
         {
             "id": 1,
-            "nome": "MEJ",
-            "descricao": "",
-            "cor": "#976391"
+            "titulo": "MEJ",
+            "descricao": "O Movimento Empresa Junior tem como missão formar, por meio da vivência empresarial, pessoas comprometidas e capazes de transformar o Brasil através da realização de mais e melhores projetos.",
+            "cor": "#976391",
+            "link extra":{
+                "text": "Site BJ",
+                "url": "https://www.brasiljunior.org.br/"
+            }
+        },
+        {
+            "id": 2,
+            "titulo": "JUJU",
+            "descricao": "A Federação Juniores tem como missão representar e conectar o MEJ Capixaba, formando as lideranças responsáveis por um ES mais empreendedor.",
+            "cor": "#4C4C9D",
+            "link extra":{
+                "text": "Site Juju",
+                "url": "https://federacaojuniores.com.br/"
+            }
+        },
+        {
+            "id": 3,
+            "titulo": "ADAPTI",
+            "descricao": "A Empresa Júnior Adapti tem como propósito, adaptar pessoas e transformar realidades.",
+            "cor": "#F7996E",
+            "link extra":{
+                "text": "Site Adapti",
+                "url": "https://www.adapti.info/"
+            }
         }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "categoriaId": 1,
+            "titulo": "O que realmente são Empresas Juniores | MEJ, ENEJ, Empresa Júnior",
+            "url": "https://www.youtube.com/watch?v=qbSceQu08lc"
+        },
+        {
+            "id": 2,
+            "categoriaId": 1,
+            "titulo": "História do MEJ - Movimento Empresa Júnior",
+            "url": "https://www.youtube.com/watch?v=HmwnS9sZqoA"
+        },
+        {
+            "id": 3,
+            "categoriaId": 1,
+            "titulo": "Documentário 25 anos do MEJ - Teaser",
+            "url": "https://www.youtube.com/watch?v=AevjNIjLmys&t=18s"
+        },
+        {
+            "id": 4,
+            "categoriaId": 1,
+            "titulo": "VALE A PENA TRABALHAR EM EMPRESA JÚNIOR? | PARTE 33 de 99",
+            "url": "https://www.youtube.com/watch?v=mAvQ1XOSB9c"
+        },
+        {
+            "id": 5,
+            "categoriaId": 1,
+            "titulo": "PASSO A PASSO de como Fundar uma EJ (Empresa Junior)",
+            "url": "https://www.youtube.com/watch?v=_qnkCA_Ln0o"
+        },
+        {
+            "id": 6,
+            "categoriaId": 2,
+            "titulo": "[JUJU Ajuda] - Cuidar da saúde mental é tão importante quanto cuidar da saúde física - Rui Brandão",
+            "url": "https://www.youtube.com/watch?v=x193Sr7olFw"
+          },
+          {
+            "id": 7,
+            "categoriaId": 2,
+            "titulo": "Dia Júnior ON | Diversidade dentro de organizações",
+            "url": "https://www.youtube.com/watch?v=XFrp70Uo5KA"
+          },
+          {
+            "id": 8,
+            "categoriaId": 2,
+            "titulo": "Oficina de P.E. - LIVE #2 - Como construir as metas com assertividade",
+            "url": "https://www.youtube.com/watch?v=_ZvSEnOhN0c"
+          },
+          {
+            "id": 9,
+            "categoriaId": 2,
+            "titulo": "LivedeSegunda #11 NPS - Com a Iza do Ieep",
+            "url": "https://www.youtube.com/watch?v=q2qmhwCjxHA"
+          }, 
+          {
+            "id": 10,
+            "categoriaId": 2,
+            "titulo": "Trilha do Líder - Episódio 1 - Sucessão: desafios da cogestão e como manter o ritmo de resultados",
+            "url": "https://www.youtube.com/watch?v=0Lz7Lm0vl0Y"
+          },
+          {
+            "id": 11,
+            "categoriaId": 3,
+            "titulo": "Ciência ao Vivo - Educação Empreendedora & Empresa Juniores",
+            "url": "https://www.youtube.com/watch?v=zvYaaKjcmX4"
+          },
+          {
+            "id": 12,
+            "categoriaId": 3,
+            "titulo": "Primeira Imersão Adapti - 26/04/2015",
+            "url": "https://www.youtube.com/watch?v=7VpWjZHYqVE"
+          },
+          {
+            "id": 13,
+            "categoriaId": 3,
+            "titulo": "Processo Seletivo Adapti 2015 - Desenvolvimento",
+            "url": "https://www.youtube.com/watch?v=y0xUAT-UCyk"
+          },
+          {
+            "id": 14,
+            "categoriaId": 3,
+            "titulo": "Processo Seletivo Adapti 2015 - Marketing",
+            "url": "https://www.youtube.com/watch?v=RtIpl2qpN1E"
+          }
     ]
 }
