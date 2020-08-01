@@ -72,7 +72,7 @@ function RegisterVideo() {
         </Button>
 
       </form>
-      <Link to="/category/register">
+      <Link to="/categoria/register">
         Cadastrar Categoria
       </Link>
     </PageDefault>
