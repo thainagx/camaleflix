@@ -30,12 +30,10 @@ function RegisterVideo() {
         Cadastro de Vídeo
       </h1>
 
-      <form onSubmit={(event) =>{
+      <form onSubmit={(event) => {
         event.preventDefault();
 
-        const categoriaEscolhida = categorias.find((categoria) => {
-          return categoria.titulo === values.categoria;
-        });
+        const categoriaEscolhida = categorias.find((categoria) => categoria.titulo === values.categoria);
         videosRepository.create({
           titulo: values.titulo,
           url: values.url,
@@ -44,27 +42,28 @@ function RegisterVideo() {
           .then(() => {
             history.push('/');
           });
-      }}>
+      }}
+      >
         <FormField
-            label="Título"
-            value={values.titulo}
-            onChange={handleChange}
-            name="titulo"
+          label="Título"
+          value={values.titulo}
+          onChange={handleChange}
+          name="titulo"
         />
 
         <FormField
-            label="URL"
-            value={values.url}
-            onChange={handleChange}
-            name="url"
+          label="URL"
+          value={values.url}
+          onChange={handleChange}
+          name="url"
         />
 
         <FormField
-            label="Categoria"
-            value={values.categoria}
-            onChange={handleChange}
-            name="categoria"
-            suggestions={categoryTitles}
+          label="Categoria"
+          value={values.categoria}
+          onChange={handleChange}
+          name="categoria"
+          suggestions={categoryTitles}
         />
 
         <Button type="submit">
