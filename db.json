@@ -5,7 +5,7 @@
             "titulo": "MEJ",
             "descricao": "O Movimento Empresa Junior tem como missão formar, por meio da vivência empresarial, pessoas comprometidas e capazes de transformar o Brasil através da realização de mais e melhores projetos.",
             "cor": "#976391",
-            "link extra":{
+            "link_extra":{
                 "text": "Site BJ",
                 "url": "https://www.brasiljunior.org.br/"
             }
@@ -15,7 +15,7 @@
             "titulo": "JUJU",
             "descricao": "A Federação Juniores tem como missão representar e conectar o MEJ Capixaba, formando as lideranças responsáveis por um ES mais empreendedor.",
             "cor": "#4C4C9D",
-            "link extra":{
+            "link_extra":{
                 "text": "Site Juju",
                 "url": "https://federacaojuniores.com.br/"
             }
@@ -25,7 +25,7 @@
             "titulo": "ADAPTI",
             "descricao": "A Empresa Júnior Adapti tem como propósito, adaptar pessoas e transformar realidades.",
             "cor": "#F7996E",
-            "link extra":{
+            "link_extra":{
                 "text": "Site Adapti",
                 "url": "https://www.adapti.info/"
             }
